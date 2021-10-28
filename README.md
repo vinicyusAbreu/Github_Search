@@ -7,7 +7,7 @@ Neste projeto, criei um aplicativo da web, que pesquisa o nome de um usuário do
 <h2 ><a href="https://vinicyusabreu.github.io/Github_Search/" target="_blank">🚀 Link do Projeto 🚀</a></h2>
 
 ## ✨ Demonstração    
-Veja abaixo uma imagem do projeto.</br>
+Veja abaixo um gif do projeto.</br>
 [![Image from Gyazo](https://i.gyazo.com/fa722c902810cb76e1cc5081a68f6403.gif)](https://gyazo.com/fa722c902810cb76e1cc5081a68f6403)
 
 ## 🎯 Objetivo do projeto
