@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    --bg: #232324;
+    --black: #201F1F;
+    --purple: #8752CC;
+    --gray: #B2B2B2;
+    font-size: 62.5%;
+    --animate-duration: 1.5s;
+    --animate-delay: .5s;
+}
+
+body {
+    background-color: var(--bg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+
+/* ! CAMPO DE BUSCA */
+
+.container-busca {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-busca {
+    margin-bottom: 4rem;
+}
+
+form {
+    width: 25rem;
+}
+
+.input-busca {
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 5px solid var(--purple);
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+.btn-input input {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--purple);
+    transition: .2s;
+}
+
+.btn-input input:hover {
+    background-color: hsl(266, 54%, 59%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ! CAMPO DA CABEÇA */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    min-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.logo {
+    height: 5.5rem;
+}
+
+.fa-arrow-left {
+    font-size: 2.5rem;
+    color: var(--gray);
+    transition: .2s;
+}
+
+.fa-arrow-left:hover {
+    color: hsl(0, 0%, 90%);
+}
+
+
+/* ! CAMPO Do USUARIO */
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    color: var(--gray);
+    width: 100%;
+}
+
+.container-user {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-img-user {
+    margin-right: 1rem;
+}
+
+.container-img-user img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container-info h2 {
+    font-size: 3rem;
+    color: var(--purple);
+}
+
+.container-info>a {
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gray);
+    transition: .2s;
+}
+
+.container-info>a:hover {
+    color: hsl(0, 0%, 90%);
+}
+
+.user-localizacao {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.user-localizacao span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3rem;
+    margin-right: 2rem;
+    max-width: 100%;
+}
+
+.user-localizacao span img {
+    margin-right: 1rem;
+    height: 2rem;
+}
+
+.user-info {
+    display: flex;
+}
+
+.user-info span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.user-info span img {
+    margin-right: 1rem;
+    height: 2rem;
+}
+
+.container-repositorio_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.container-repositorio_user h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.user-repositorio {
+    display: flex;
+    align-items: center;
+}
+
+.user-repositorio img {
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.user-repositorio span {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+
+/* ! CAMPO DO REPOSITORIO */
+
+.repositorio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    min-height: 13.5rem;
+}
+
+.container_repositorio {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+
+/* ! CAMPO BOX DO REPOSITORIO */
+
+.box_repositorio {
+    background-color: var(--black);
+    padding: 1rem;
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 18rem;
+    width: 100%;
+}
+
+.fa-file-code {
+    color: var(--purple);
+    font-size: 1.5rem;
+}
+
+.conteudo_repositorio a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--gray);
+    transition: .2s;
+}
+
+.conteudo_repositorio a:hover {
+    color: hsl(0, 0%, 85%);
+}
+
+.conteudo_repositorio p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.info_repositorio {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.info_repositorio>span {
+    display: flex;
+    align-items: center;
+}
+
+.linguagem {
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_repositorio>span p {
+    font-size: 1.5rem;
+}
+
+.info_repositorio>span img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: .2s;
+}
+
+.repo:hover {
+    color: hsl(0, 0%, 85%);
+}
+
+.repo span {
+    font-size: 1.5rem;
+}
+
+.repo img {
+    height: 1.5rem;
+}
+
+
+/*! CAMPO DO FOOTER*/
+
+footer {
+    height: 6rem;
+    margin-top: 5rem;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-icons {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+.container-icons a {
+    font-size: 4rem;
+    color: var(--gray);
+    transition: .2s;
+}
+
+.container-icons a:hover {
+    color: hsl(0, 0%, 85%);
+}
+
+
+/*! CAMPO DOS ERROS */
+
+.container-erro {
+    height: 45.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.erro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.erro p {
+    color: var(--gray);
+    font-weight: 700;
+}
+
+.erro p span {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.fa-github-alt,
+.erro p,
+.erro p span {
+    font-size: 10rem;
+}
+
+.fa-github-alt {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+
+/*! MEDIAS QUERIES  */
+
+@media(max-width:1024px) {
+    .container_repositorio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .user-localizacao span,
+    .user-info span {
+        font-size: 2.8rem;
+    }
+    .container-repositorio_user h3 {
+        text-align: center;
+    }
+}
+
+@media(max-width:768px) {
+    .container-user {
+        flex-direction: column;
+    }
+    .container-info {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .fa-github-alt,
+    .erro p,
+    .erro p span {
+        font-size: 7.3rem;
+    }
+}
+
+@media(max-width:660px) {
+    .container_repositorio {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media(max-width:480px) {
+    .container-erro {
+        min-height: 77.3vh;
+    }
+    .user-localizacao {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .user-localizacao span {
+        margin: 0;
+    }
+    .user-localizacao span,
+    .user-info span {
+        font-size: 1.8rem;
+    }
+    .user-localizacao span img,
+    .user-info span img {
+        height: 1.5rem;
+    }
+    .fa-github-alt,
+    .erro p,
+    .erro p span {
+        font-size: 5.3rem;
+    }
+}
+
+@media(max-width:390px) {
+    .container-erro {
+        min-height: 80vh;
+    }
+    .user-localizacao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fa-github-alt,
+    .erro p,
+    .erro p span {
+        font-size: 4.3rem;
+    }
+}
+
+@media(max-width:320px) {
+    .container-erro {
+        min-height: 71vh;
+    }
+    .conteudo_repositorio a {
+        font-size: 1.8rem;
+    }
+    .info_repositorio>span {
+        gap: .3rem;
+    }
+    .info_repositorio span img {
+        margin: 0;
+    }
+    .fa-github-alt,
+    .erro p,
+    .erro p span {
+        font-size: 3.3rem;
+    }
+}
+
+@media(max-width:300px) {
+    .container-info h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.spinner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-circle-notch {
+    font-size: 5rem;
+    color: var(--purple);
+    animation: rotate .9s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

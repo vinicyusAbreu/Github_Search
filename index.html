@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Github Search</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body>
+    <!-- animate__animated animate__bounceInRight -->
+    <header class="animate__animated animate__fadeIn hidden">
+
+        <nav class="container-header">
+            <a href="#">
+                <img src="/img/logo-horizontal.svg" alt="" class="logo">
+            </a>
+
+            <a href="#">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- animate__animated animate__bounceInLeft -->
+    <section class="user animate__animated animate__fadeInDown hidden">
+        <div class="container-user">
+
+        </div>
+    </section>
+
+    <section class="repositorio hidden animate__animated animate__bounceInLeft">
+        <div class="container_repositorio">
+
+
+        </div>
+    </section>
+
+    <div class="container-erro animate__animated animate__bounce hidden">
+        <div class="erro">
+            <p><span>404</span> Not Found</p>
+            <i class="fab fa-github-alt"></i>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-busca animate__animated animate__backInDown">
+
+        <div class="imagem-busca ">
+            <img src="img/logo-vertical.svg" alt="github-search">
+        </div>
+
+
+        <form>
+            <input type="search" class="input-busca" placeholder="Enter user name">
+
+            <div class="btn-input">
+                <input type="submit" value="search">
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <div class="spinner hidden">
+        <i class="fas fa-circle-notch"></i>
+    </div>
+
+    <footer class="hidden">
+        <div class="container-icons">
+
+            <a href="#"> <i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="/js/app.js" async defer type="module"></script>
+</body>
+
+</html>
