@@ -2,7 +2,7 @@
 Projeto de busca de usuarios e repositorios do github através da API do github.
 
 ## ℹ Sobre o projeto 
-Neste projeto, criei um aplicativo da web, que pesquisa o nome de um usuário do github e fornecerá detalhes sobre o usuário e seu repositórios. Foi usado a API do github para isso e todo projeto foi feito em javascript puro.
+Neste projeto, criei um aplicativo da web, que pesquisa o nome de um usuário do github e fornecerá detalhes sobre seu perfil e seu repositório. Foi usado a API do github para isso e todo projeto foi feito em javascript puro.
 
 <h2 ><a href="https://vinicyusabreu.github.io/Github_Search/" target="_blank">🚀 Link do Projeto 🚀</a></h2>
 
